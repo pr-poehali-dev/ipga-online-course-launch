@@ -62,8 +62,10 @@ const Index = () => {
             <a href="#process" className="text-muted-foreground hover:text-foreground transition-colors">Процесс</a>
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">
-            Начать проект
+          <Button className="bg-primary hover:bg-primary/90" asChild>
+            <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+              Начать проект
+            </a>
           </Button>
         </div>
       </nav>
@@ -78,8 +80,10 @@ const Index = () => {
               Полный цикл разработки и запуска онлайн-курсов. От идеи до первых продаж.
             </p>
             <div className="flex gap-4 pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Обсудить проект
+              <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+                <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+                  Обсудить проект
+                </a>
               </Button>
             </div>
           </div>
@@ -170,8 +174,10 @@ const Index = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Запишитесь на бесплатную консультацию, и мы обсудим, как создать и запустить ваш онлайн-курс
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Записаться на консультацию
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+                Записаться на консультацию
+              </a>
             </Button>
           </div>
         </div>
@@ -222,8 +228,10 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Экспертам, которые хотят быстро и качественно запустить курс без масштабирования</p>
                 </div>
 
-                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
-                  Заказать сейчас
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg" asChild>
+                  <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+                    Заказать сейчас
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -273,8 +281,10 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Экспертам, которые хотят максимальный результат: рост продаж, автоматизацию и продвижение</p>
                 </div>
 
-                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
-                  Получить консультацию
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg" asChild>
+                  <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+                    Получить консультацию
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -316,8 +326,10 @@ const Index = () => {
                     className="bg-background border-border min-h-[120px]"
                   />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
-                  Отправить заявку
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg" asChild>
+                  <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
+                    Отправить заявку
+                  </a>
                 </Button>
               </form>
             </CardContent>
