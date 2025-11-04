@@ -169,6 +169,9 @@ const Index = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Запишитесь на бесплатную консультацию, и мы обсудим, как создать и запустить ваш онлайн-курс
             </p>
+            <div className="text-2xl md:text-3xl font-bold text-primary">
+              50.000₽ + 20% с продажи курса
+            </div>
             <Button size="lg" className="bg-primary hover:bg-primary/90">
               Записаться на консультацию
             </Button>
