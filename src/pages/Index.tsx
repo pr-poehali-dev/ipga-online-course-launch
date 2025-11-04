@@ -56,7 +56,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">IPGA</div>
+          <div className="text-2xl font-bold text-white">IPGA</div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Услуги</a>
             <a href="#process" className="text-muted-foreground hover:text-foreground transition-colors">Процесс</a>
