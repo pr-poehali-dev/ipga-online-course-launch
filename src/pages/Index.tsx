@@ -279,7 +279,7 @@ const Index = () => {
       <section id="contact" className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами прямо сейчас!</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Вы получите бесплатную онлайн консультацию
             </p>
