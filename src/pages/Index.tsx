@@ -163,38 +163,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши курсы</h2>
-            <p className="text-muted-foreground text-lg">Готовые образовательные продукты для вашего развития</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Создание онлайн-курса"
-              description="Полный курс по разработке и запуску вашего онлайн-курса с нуля. Все этапы от идеи до первых продаж."
-              price="29.990₽"
-              oldPrice="49.990₽"
-              badge="ХИТ"
-            />
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Маркетинг для экспертов"
-              description="Узнайте, как продвигать свою экспертизу и привлекать учеников для онлайн-курсов."
-              price="19.990₽"
-            />
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Продажи образования"
-              description="Эффективные стратегии продаж онлайн-курсов и увеличения конверсии."
-              price="24.990₽"
-              badge="НОВИНКА"
-            />
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-8">
