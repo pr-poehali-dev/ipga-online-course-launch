@@ -163,34 +163,107 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши курсы</h2>
-            <p className="text-muted-foreground text-lg">Готовые образовательные продукты для вашего развития</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Тарифы на разработку курса</h2>
+            <p className="text-muted-foreground text-lg">Выберите оптимальный вариант для запуска вашего инфопродукта</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Создание онлайн-курса"
-              description="Полный курс по разработке и запуску вашего онлайн-курса с нуля. Все этапы от идеи до первых продаж."
-              price="29.990₽"
-              oldPrice="49.990₽"
-              badge="ХИТ"
-            />
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Маркетинг для экспертов"
-              description="Узнайте, как продвигать свою экспертизу и привлекать учеников для онлайн-курсов."
-              price="19.990₽"
-            />
-            <ProductCard
-              image="https://cdn.poehali.dev/projects/38711f3a-caae-4060-868e-d0da9e327fdd/files/3a8d2037-61fc-4d31-971e-5362bffe250f.jpg"
-              title="Продажи образования"
-              description="Эффективные стратегии продаж онлайн-курсов и увеличения конверсии."
-              price="24.990₽"
-              badge="НОВИНКА"
-            />
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-card border-2 border-border hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute top-6 right-6 text-4xl">📦</div>
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-3xl font-bold mb-2">Базовый тариф</h3>
+                  <p className="text-lg text-muted-foreground">Разработка и запуск онлайн курса</p>
+                </div>
+                
+                <div className="space-y-3 mb-8">
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Создание полного курса под ключ</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Структурирование и наполнение контентом</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Настройка платформы и техническая поддержка</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Запуск и старт первых продаж</span>
+                  </div>
+                </div>
+
+                <div className="bg-muted/50 rounded-lg p-4 mb-6">
+                  <div className="text-sm text-muted-foreground mb-1">Цена</div>
+                  <div className="text-3xl font-bold text-primary">50.000₽</div>
+                  <div className="text-sm text-muted-foreground mt-1">+ 15% от продаж курса</div>
+                </div>
+
+                <div className="bg-primary/10 rounded-lg p-4 mb-6">
+                  <div className="text-sm font-semibold text-foreground mb-1">Кому подходит</div>
+                  <p className="text-sm text-muted-foreground">Экспертам, которые хотят быстро и качественно запустить курс без масштабирования</p>
+                </div>
+
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
+                  Заказать сейчас
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-2 border-primary hover:border-primary transition-all duration-300 relative overflow-hidden shadow-lg">
+              <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-sm font-semibold">
+                Рекомендуем
+              </div>
+              <div className="absolute top-6 right-6 text-4xl">🚀</div>
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-3xl font-bold mb-2">Премиум тариф</h3>
+                  <p className="text-lg text-muted-foreground">Полное продюсирование, масштабирование и реклама</p>
+                </div>
+                
+                <div className="space-y-3 mb-8">
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground font-semibold">Всё из базового тарифа +</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Масштабирование проекта и оптимизация</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Комплексная аналитика продаж и поведения пользователей</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Настройка и ведение рекламных кампаний (таргетинг, контекст)</span>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <span className="text-foreground">Продюсирование команды и управление процессом</span>
+                  </div>
+                </div>
+
+                <div className="bg-primary/20 rounded-lg p-4 mb-6">
+                  <div className="text-sm text-muted-foreground mb-1">Цена</div>
+                  <div className="text-3xl font-bold text-primary">100.000₽</div>
+                  <div className="text-sm text-muted-foreground mt-1">+ 15% от продаж курса</div>
+                </div>
+
+                <div className="bg-primary/10 rounded-lg p-4 mb-6">
+                  <div className="text-sm font-semibold text-foreground mb-1">Кому подходит</div>
+                  <p className="text-sm text-muted-foreground">Экспертам, которые хотят максимальный результат: рост продаж, автоматизацию и продвижение</p>
+                </div>
+
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
+                  Получить консультацию
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
