@@ -84,9 +84,6 @@ const Index = () => {
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Обсудить проект
               </Button>
-              <Button size="lg" variant="outline">
-                Наши кейсы
-              </Button>
             </div>
           </div>
         </div>
