@@ -74,7 +74,7 @@ const Index = () => {
               <span className="text-primary">IPGA</span> - БОЛЬШЕ ЧЕМ МАРКЕТИНГ
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Полный цикл разработки и запуска онлайн-курсов для экспертов. От идеи до первых продаж.
+              Полный цикл разработки и запуска онлайн-курсов. От идеи до первых продаж.
             </p>
             <div className="flex gap-4 pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
