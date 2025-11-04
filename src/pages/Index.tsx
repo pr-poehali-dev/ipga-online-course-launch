@@ -71,11 +71,9 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Превращаем вашу
+              Разработка и запуск
               <br />
-              <span className="text-primary">экспертизу</span> в
-              <br />
-              прибыльный курс
+              <span className="text-primary">онлайн-курсов</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Полный цикл разработки и запуска онлайн-курсов для экспертов. От идеи до первых продаж.
