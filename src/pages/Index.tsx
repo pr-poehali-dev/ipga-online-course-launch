@@ -88,6 +88,20 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-4xl">
+          <div className="text-center space-y-8">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase">ОНЛАЙН КОНСУЛЬТАЦИЯ</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Запишитесь на бесплатную консультацию, и мы обсудим, как создать и запустить ваш онлайн-курс
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              Записаться на консультацию
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">О нас</h2>
             <p className="text-lg text-foreground leading-relaxed">
@@ -268,21 +282,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-muted/20">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase">Бесплатная онлайн консультация</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Запишитесь на бесплатную консультацию, и мы обсудим, как создать и запустить ваш онлайн-курс
-            </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Записаться на консультацию
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-20 px-4">
+      <section id="contact" className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
