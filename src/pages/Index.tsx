@@ -89,6 +89,38 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-muted/20">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center space-y-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">О нас</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              IPGA — агентство полного цикла по разработке и запуску онлайн-курсов. 
+              Мы помогаем экспертам упаковать свои знания в востребованный образовательный продукт 
+              и вывести его на рынок.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Наша команда объединяет специалистов в области методологии обучения, 
+              контент-продакшена, маркетинга и технологий. Мы берём на себя весь путь — 
+              от анализа аудитории до масштабирования продаж.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 pt-8">
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">50+</div>
+                <div className="text-muted-foreground">Запущенных курсов</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">5 лет</div>
+                <div className="text-muted-foreground">На рынке</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">10K+</div>
+                <div className="text-muted-foreground">Довольных студентов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
