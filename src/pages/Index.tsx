@@ -1,12 +1,200 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const services = [
+    {
+      icon: "Rocket",
+      title: "Разработка курса",
+      description: "Создаём структуру, сценарии и контент вашего онлайн-курса с нуля"
+    },
+    {
+      icon: "BookOpen",
+      title: "Учебная платформа",
+      description: "Настраиваем удобную платформу для обучения ваших студентов"
+    },
+    {
+      icon: "Users",
+      title: "Продвижение",
+      description: "Разрабатываем стратегию запуска и продвижения курса"
+    },
+    {
+      icon: "BarChart",
+      title: "Аналитика",
+      description: "Отслеживаем метрики и оптимизируем результаты обучения"
+    }
+  ];
+
+  const processSteps = [
+    {
+      number: "01",
+      title: "Анализ",
+      description: "Изучаем вашу экспертизу и целевую аудиторию"
+    },
+    {
+      number: "02",
+      title: "Стратегия",
+      description: "Разрабатываем концепцию и структуру курса"
+    },
+    {
+      number: "03",
+      title: "Производство",
+      description: "Создаём контент и настраиваем платформу"
+    },
+    {
+      number: "04",
+      title: "Запуск",
+      description: "Выводим курс на рынок и масштабируем"
+    }
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="text-2xl font-bold text-primary">IPGA</div>
+          <div className="hidden md:flex gap-8">
+            <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Услуги</a>
+            <a href="#process" className="text-muted-foreground hover:text-foreground transition-colors">Процесс</a>
+            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
+          </div>
+          <Button className="bg-primary hover:bg-primary/90">
+            Начать проект
+          </Button>
+        </div>
+      </nav>
+
+      <section className="pt-32 pb-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center space-y-6 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              Превращаем вашу
+              <br />
+              <span className="text-primary">экспертизу</span> в
+              <br />
+              прибыльный курс
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Полный цикл разработки и запуска онлайн-курсов для экспертов. От идеи до первых продаж.
+            </p>
+            <div className="flex gap-4 justify-center pt-4">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                Обсудить проект
+              </Button>
+              <Button size="lg" variant="outline">
+                Наши кейсы
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
+            <p className="text-muted-foreground text-lg">Комплексный подход к созданию онлайн-образования</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {services.map((service, index) => (
+              <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 group">
+                <CardContent className="p-8">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                    <Icon name={service.icon} size={28} className="text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Процесс работы</h2>
+            <p className="text-muted-foreground text-lg">Четыре этапа до запуска вашего курса</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {processSteps.map((step, index) => (
+              <div key={index} className="relative group">
+                <div className="bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                  <div className="text-6xl font-bold text-primary/20 mb-4">{step.number}</div>
+                  <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm">{step.description}</p>
+                </div>
+                {index < processSteps.length - 1 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-border"></div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 px-4">
+        <div className="container mx-auto max-w-2xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
+            <p className="text-muted-foreground text-lg">Обсудим ваш проект и подберём оптимальное решение</p>
+          </div>
+          <Card className="bg-card border-border">
+            <CardContent className="p-8">
+              <form className="space-y-6">
+                <div>
+                  <Input 
+                    placeholder="Ваше имя" 
+                    className="bg-background border-border"
+                  />
+                </div>
+                <div>
+                  <Input 
+                    type="email" 
+                    placeholder="Email" 
+                    className="bg-background border-border"
+                  />
+                </div>
+                <div>
+                  <Input 
+                    placeholder="Телефон" 
+                    className="bg-background border-border"
+                  />
+                </div>
+                <div>
+                  <Textarea 
+                    placeholder="Расскажите о вашем проекте"
+                    className="bg-background border-border min-h-[120px]"
+                  />
+                </div>
+                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
+                  Отправить заявку
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <footer className="py-12 px-4 border-t border-border">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-2xl font-bold text-primary">IPGA</div>
+            <div className="flex gap-8 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-foreground transition-colors">Telegram</a>
+              <a href="#" className="hover:text-foreground transition-colors">WhatsApp</a>
+              <a href="#" className="hover:text-foreground transition-colors">Email</a>
+            </div>
+            <div className="text-sm text-muted-foreground">
+              © 2024 IPGA. Все права защищены
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
