@@ -167,22 +167,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase">ОНЛАЙН КОНСУЛЬТАЦИЯ</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Запишитесь на бесплатную консультацию, и мы обсудим, как создать и запустить ваш онлайн-курс
-            </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
-              <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
-                Записаться на консультацию
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -289,51 +273,6 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-20 px-4 bg-muted/20">
-        <div className="container mx-auto max-w-2xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
-            <p className="text-muted-foreground text-lg">Обсудим ваш проект и подберём оптимальное решение</p>
-          </div>
-          <Card className="bg-card border-border">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div>
-                  <Input 
-                    placeholder="Ваше имя" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Input 
-                    type="email" 
-                    placeholder="Email" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Input 
-                    placeholder="Телефон" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Textarea 
-                    placeholder="Расскажите о вашем проекте"
-                    className="bg-background border-border min-h-[120px]"
-                  />
-                </div>
-                <Button className="w-full bg-primary hover:bg-primary/90" size="lg" asChild>
-                  <a href="https://t.me/nmagalin" target="_blank" rel="noopener noreferrer">
-                    Отправить заявку
-                  </a>
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
