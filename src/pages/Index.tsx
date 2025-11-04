@@ -69,14 +69,14 @@ const Index = () => {
 
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center space-y-6 animate-fade-in">
+          <div className="text-left space-y-6 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight uppercase">
-              IPGA - БОЛЬШЕ ЧЕМ МАРКЕТИНГ
+              <span className="text-primary">IPGA</span> - БОЛЬШЕ ЧЕМ МАРКЕТИНГ
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl">
               Полный цикл разработки и запуска онлайн-курсов для экспертов. От идеи до первых продаж.
             </p>
-            <div className="flex gap-4 justify-center pt-4">
+            <div className="flex gap-4 pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Обсудить проект
               </Button>
