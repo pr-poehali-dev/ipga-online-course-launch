@@ -70,7 +70,7 @@ const Index = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight uppercase">
               Разработка и запуск
               <br />
               <span className="text-primary">онлайн-курсов</span>
